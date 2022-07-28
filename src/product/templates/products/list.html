@@ -18,7 +18,9 @@
             <div class="col-md-2">
                 <select name="variant" id="" class="form-control">
                     <option selected disabled>--Select A Variant--</option>
-
+                            {% for product_variant in variants_ls %}
+                                <option name="variant"> {{ product_variant.variant_title }} </option>
+                            {% endfor %}
                 </select>
             </div>
 
